@@ -11,6 +11,6 @@ services:
     environment:
       - PORT=8080
       - GOOGLE_APPLICATION_CREDENTIALS=/secrets/key.json
-      - GOOGLE_CLOUD_PROJECT=nube-2025-i # Reemplaza con TU proyecto
-      - FIRESTORE_DATABASE=db-notes # Reemplaza con TU base de datos
+      - GOOGLE_CLOUD_PROJECT=nube-2025-ii # Reemplaza con TU proyecto
+      - FIRESTORE_DATABASE=mendoza # Reemplaza con TU base de datos
     command: uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
